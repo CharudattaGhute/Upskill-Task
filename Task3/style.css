@@ -1,0 +1,25 @@
+body{
+    background-color:darkorange;
+}
+.head{
+    color: darkblue;
+    font-size: medium;
+}
+#bglime{
+    background-color: greenyellow;
+    font-size: xx-large;
+}
+span{
+    color: red;
+}
+p{
+   color: white; 
+   font-size:x-large;
+}
+#para{
+    color: green;
+    font-size: small;
+}
+p span{
+    color: black;
+}
