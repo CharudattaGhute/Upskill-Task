@@ -1,0 +1,23 @@
+.container img {
+    margin-top: 10%;
+    margin-left: 25%;
+}
+
+.btn-grad {
+        background-image: linear-gradient(to right, #DCE35B 0%, #45B649  51%, #DCE35B  100%);
+        padding: 15px 45px;
+        text-align: center;
+        background-size: 200% auto;
+        color: white;            
+        box-shadow: 0 0 20px #eee;
+        margin-left: 25%;
+        width: 56%;
+
+}
+.btn-grad:hover {
+        background-position: right center; 
+        color: #fff;
+        text-decoration: none;
+}
+     
+    
