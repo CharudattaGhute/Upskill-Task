@@ -1,0 +1,21 @@
+.container{
+width: 600px;
+height: 70vh;
+background-color: aliceblue;
+    
+}
+
+.container img{
+    width: 300px;
+    margin-right: 100%;
+   margin-bottom: 50%;
+   position:static;
+   
+
+}
+.container form{
+    margin-top:20%;
+    margin-bottom: 50%;
+    
+}
+ 
