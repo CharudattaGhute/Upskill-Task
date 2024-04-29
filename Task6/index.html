@@ -18,27 +18,19 @@
     <title>Hello, world!</title>
 </head>
 <style>
-    /* CSS for mobile view */
-    @media (max-width: 991.98px) {
-        .custom-navbar .custom-nav-list {
-            display: none;
-            /* Hide the navigation list in mobile view */
-        }
-
-        .custom-navbar .username-btn {
-            display: block;
-            /* Display the username button in mobile view */
-        }
-    }
-
     /* CSS for desktop view */
     @media (min-width: 992px) {
-        .custom-navbar .nav-item {
+        .custom-navbar.nav-item {
             display: inline-block;
 
             margin-right: 10px;
             overflow: hidden;
 
+        }
+
+        .custom-navbar.username-btn {
+            display: none;
+            /* Hide the username button in desktop view */
         }
     }
 </style>
