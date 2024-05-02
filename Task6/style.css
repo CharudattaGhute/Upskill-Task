@@ -6,8 +6,6 @@ ul{
     list-style: none;
     display: inline;
     list-style: none;
-    
-    
 }
 ul li{
     position: absolute;
@@ -38,12 +36,14 @@ ol button{
     height: 40px;
     color: white;
 }
+
 .left{
     float: left;
     
     
 
 }
+
 .left h1{
     color: rgb(12, 12, 54);
     font-weight: bold;
