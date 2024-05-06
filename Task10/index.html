@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 600px;
+        height: 500px;
+        border: 1px solid black;
+        margin-left: 20%;
+        margin-top: 5%;
+    }
+
+    .container input {
+        width: 300px;
+        height: 30px;
+        margin-left: 20%;
+        margin-top: 60px;
+    }
+
+    button {
+        width: 300px;
+        height: 10%;
+        margin-left: 20%;
+        margin-top: 40px;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <input placeholder="principal" id="Principal"><br>
+        <input placeholder="rate" id="rate"><br>
+        <input placeholder="times" id="times"><br>
+        <input placeholder="year" id="Year"><br>
+        <button onclick="calculation()">calculate</button>
+        <div class="input" id="cal"></div>
+    </div>
+
+
+
+</body>
+<script>
+    function calculation() {
+        let P = document.getElementById("Principal").value;
+        let r = document.getElementById("rate").value;
+        let n = document.getElementById("times").value;
+        let t = document.getElementById("Year").value;
+
+        let result = (P * (1 + r / n)) ^ (n * t);
+        document.getElementById("cal").innerHTML =
+            "The compound interest after 3 years is:" + result;
+        console.log(result);
+    }
+
+</script>
+
+
+</html>
