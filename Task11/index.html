@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        width: 400px;
+        height: 300px;
+        border: 2px solid black;
+        margin-left: 30%;
+        margin-top: 10%;
+
+    }
+
+    .container input {
+        display: block;
+        margin: 5px auto;
+        text-align: center;
+        margin-top: 20%;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <input id="input" placeholder="Enter the number"><br>
+        <button onclick="cal()" style="margin-left: 40%;">calculate</button>
+        <p id="result" style="text-align: center;"></p>
+
+    </div>
+
+</body>
+<script>
+    function cal() {
+        let num = document.getElementById("input").value;
+        let result = document.getElementById('result').value
+        if (num % 2 === 0) {
+            document.getElementById("result").innerHTML = `The number ${num} is even`
+        } else {
+            document.getElementById("result").innerHTML = `The number ${num} is odd`
+        }
+    }
+</script>
+
+</html>
