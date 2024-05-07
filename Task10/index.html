@@ -8,8 +8,8 @@
 </head>
 <style>
     .container {
-        width: 600px;
-        height: 550px;
+        width: 500px;
+        height: 400px;
         border: 1px solid black;
         margin-left: 25%;
         margin-top: 3%;
@@ -17,9 +17,9 @@
 
     .container input {
         width: 300px;
-        height: 30px;
+        height: 20px;
         margin-left: 25%;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     button {
@@ -28,6 +28,16 @@
         margin-left: 25%;
         margin-top: 40px;
 
+    }
+
+    .output {
+        width: 400px;
+        height: 90px;
+        border: 3px solid black;
+        margin-left: 30%;
+        margin-top: 4%;
+        text-align: center;
+        align-items: center;
     }
 </style>
 
@@ -38,8 +48,9 @@
         <input placeholder="times" id="times"><br>
         <input placeholder="year" id="Year"><br>
         <button onclick="calculation()">calculate</button>
-        <div class="input" id="cal"></div>
+
     </div>
+    <div class="output" id="cal"></div>
 
 
 
