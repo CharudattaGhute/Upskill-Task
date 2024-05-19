@@ -1,26 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<html>
 
 <body>
+    <input type="text" id="arrayInput" placeholder="Enter array elements separated by commas" />
+    <button onclick="displayArray()">Display Array</button>
+    <div id="arrayDisplay"></div>
+    <div id="maxDisplay"></div>
+    <div id="sum"></div>
 
+    <script>
+        function displayArray() {
+            let input = document.getElementById("arrayInput").value;
+            let array = input.split(",").map((element) => parseInt(element));
+
+            let display = document.getElementById("arrayDisplay");
+            display.innerHTML = "";
+
+            for (let i = 0; i < array.length; i++) {
+                let element = document.createElement("p");
+                element.textContent = array[i];
+                display.appendChild(element);
+            }
+
+            let max = Math.max.apply(null, array);
+            let maxDisplay = document.getElementById("maxDisplay");
+            maxDisplay.textContent = "Max: " + max;
+
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            let sumDisplay = document.getElementById("sum");
+            sumDisplay.textContent = `sum:${sum}`
+        }
+    </script>
 </body>
-<script>
-    const input = prompt("Enter the array")
-    const arr = input.split()
-    for (i = 0; i < arr; i++) {
-        let max = Math.max(arr)
-        console.log("thae maximum nuber", max)
-        console.log(i)
-
-    }
-
-
-</script>
 
 </html>
