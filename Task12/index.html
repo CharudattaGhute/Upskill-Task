@@ -13,11 +13,19 @@
 
 </body>
 <script>
-    function cal(accum, cur) {
-        let result = document.getElementById("input").value;
-        for (i = 0; i <= result.length; i++) {
+    function cal() {
+        let digit = document.getElementById("input").value;
+        const order = Number(digit.length)
+        const sum = digit.reduce((acc, digit) =>
+            acc + Math.pow(parseInt(digit), order), 0);
 
+        if (sum === number) {
+            console.log("armstrong number")
+        } else {
+            console.log("this is not a armstrong number")
         }
+
+
     }
 
 
