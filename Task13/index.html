@@ -42,6 +42,7 @@
             <div id="maxDisplay"></div>
             <div id="sum"></div>
             <div id="odd"></div>
+
         </div>
     </div>
 
@@ -61,14 +62,18 @@
 
             let max = Math.max.apply(null, array);
             let maxDisplay = document.getElementById("maxDisplay");
-            maxDisplay.textContent = "Max: " + max;
+            maxDisplay.textContent = "Maximum number: " + max;
 
             let sum = 0;
             for (let i = 0; i < array.length; i++) {
                 sum += array[i];
             }
             let sumDisplay = document.getElementById("sum");
-            sumDisplay.textContent = `sum:${sum}`
+            sumDisplay.textContent = `sum of elements:${sum}`
+
+            let oddNumbers = array.filter(num => num % 2 !== 0);
+            let oddDisplay = document.getElementById('odd')
+            oddDisplay.textContent = `count of odd Number :${oddNumbers}`
 
 
 
